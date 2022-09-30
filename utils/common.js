@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const request = async ({ url, params = {} }) => {
+  console.log("rul", url);
   const options = {
     method: "GET",
     url: `https://imdb8.p.rapidapi.com/${url}`,
@@ -14,6 +15,9 @@ export const request = async ({ url, params = {} }) => {
   };
 
   const data = await axios.request(options);
+
+  console.log("data", data);
+
   return data;
 };
 
