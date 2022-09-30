@@ -1,0 +1,85 @@
+.actor {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.realName {
+  color: #838383;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 15px;
+  align-items: flex-start;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  border-radius: 12px;
+}
+
+.content {
+  width: calc(100% - 265px);
+}
+
+.dates {
+  display: flex;
+  color: #838383;
+  font-weight: 500;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.birthday {
+  position: relative;
+}
+
+.birthday:after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  background: #848787;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: calc(100% + 7px);
+}
+
+.bio {
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.more {
+  background: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: 50px auto;
+  min-width: 300px;
+}
+
+.more:hover {
+  background: #bfbfbf;
+}

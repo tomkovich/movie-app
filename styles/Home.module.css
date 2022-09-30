@@ -1,0 +1,25 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.footer {
+  margin-top: auto;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #838383;
+}
+
+.footer a {
+  font-size: 16px;
+  color: #2cd7fd;
+  font-weight: 500;
+}

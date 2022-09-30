@@ -1,0 +1,29 @@
+.wrap {
+  max-width: 360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+
+.image {
+  background: url(../images/bg.png) no-repeat center/cover;
+  width: 100%;
+  height: 210px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+}
+
+.subtitle {
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.update {
+  margin: 20px auto 0 auto;
+}

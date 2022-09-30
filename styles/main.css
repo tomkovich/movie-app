@@ -1,0 +1,88 @@
+.update,
+.search {
+  background: #f6d518;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  width: max-content;
+  border-radius: 6px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+
+.update.disabled {
+  cursor: not-allowed;
+  background: #c8c8c8;
+}
+
+.update.disabled .icon {
+  animation: rotating 0.5s infinite linear;
+}
+
+.update:not(.disabled):hover {
+  background: #e8d151;
+}
+
+.actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.search {
+  cursor: default;
+  background: #838383;
+}
+
+.search:focus-within {
+  background: #f6d518;
+}
+
+.search:focus-within input::placeholder {
+  color: #838383;
+}
+
+.search input {
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 600;
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #000;
+}
+
+.search input::placeholder {
+  color: #000;
+  font-weight: 500;
+}
+
+.search .tooltip {
+  position: absolute;
+  color: red;
+  font-weight: 500;
+  bottom: -70%;
+  right: 0;
+  font-size: 14px;
+}
+
+.search .icon.loading {
+  animation: rotating 0.5s infinite linear;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
