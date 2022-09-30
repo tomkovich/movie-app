@@ -34,7 +34,7 @@ const Search = () => {
     if (results?.length) {
       const ids = results.map(({ id }) => id);
 
-      setItems(ids);
+      setItems({ data: ids });
       router.push(`${BASE_URL}/${getIdFromKey(ids[0])}`);
     }
 
