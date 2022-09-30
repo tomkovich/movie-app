@@ -15,9 +15,6 @@ const GetButton = ({ text = "Get a movie", cn = "" }) => {
   const [isLoading, setLoading] = useState(false);
 
   const getMovie = () => {
-    console.log("isLoading", isLoading);
-    console.log("id", id);
-
     if (!items?.length || isLoading) return;
 
     const filtered = items.filter((item) => getIdFromKey(item) !== id);
