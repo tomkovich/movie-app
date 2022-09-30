@@ -18,6 +18,7 @@ export default function Movie({ movie }) {
 }
 
 export async function getServerSideProps({ query }) {
+  console.log("rul", `${BASE_URL}/api/movie?id=${query.id}`);
   const { data } = await axios.get(`${BASE_URL}/api/movie?id=${query.id}`);
 
   return {
