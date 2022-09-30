@@ -70,7 +70,7 @@ const Search = () => {
 
         <Image
           className={`icon ${isLoading ? "loading" : ""}`}
-          src={false ? search : refresh}
+          src={!isLoading ? search : refresh}
           alt=""
           width={14}
           height={14}
