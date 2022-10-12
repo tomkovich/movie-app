@@ -1,4 +1,4 @@
-Visit [the site](https://movie-qxy0f897u-tomkovich.vercel.app)
+Visit [the site](https://movie-app-nine-sooty.vercel.app/)
 
 - next.js
 - react.js
